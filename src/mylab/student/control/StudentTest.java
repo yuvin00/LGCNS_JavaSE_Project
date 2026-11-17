@@ -6,13 +6,8 @@ import mylab.student.exception.InvalidGradeException;
 public class StudentTest {
 
     public static void main(String[] args) {
-        Student student = new Student();
-
         try {
-            student.setStudentId("202100870");
-            student.setName("김민수");
-            student.setMajor("컴퓨터공학");
-            student.setGrade(3);
+            Student student = new Student("202100870", "김민수", "컴퓨터공학", 3);
 
             System.out.println(
                 student.getName() + " / "
