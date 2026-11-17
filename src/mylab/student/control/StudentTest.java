@@ -9,7 +9,7 @@ public class StudentTest {
         Student student = new Student();
 
         try {
-            student.setStudentId("2026001");
+            student.setStudentId("202100870");
             student.setName("김민수");
             student.setMajor("컴퓨터공학");
             student.setGrade(3);
