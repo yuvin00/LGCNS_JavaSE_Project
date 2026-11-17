@@ -9,7 +9,7 @@ public class MyDate {
 	public MyDate() {
 		System.out.println("Default Constructor가 호출됨!!");
 	}
-	//constructor overloading (생성자 중복정의)
+//	//constructor overloading (생성자 중복정의)
 	public MyDate(int year, int month, int day) {
 		this.year = year;
 		//this.month = month;
