@@ -9,7 +9,23 @@ public class TestMyDateArrayList {
 
 	public static void main(String[] args) {
 		//1. MyDate 타입의 객체만 담을 수 있는 ArrayList 객체를 생성하세요
-		List<MyDate> list = new ArrayList<>();
+		ArrayList list1 = new ArrayList();
+		list1.add(new String("hello"));
+		list1.add(new Integer(10));
+		
+		for(int i = 0;i < list1.size(); i++) {
+			String value = (String)list1.get(i);
+		}
+		
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add(new String("aaa"));
+		//list2.add(new Integer(10));
+		
+		//Generics 
+		ArrayList<MyDate> list3 = new ArrayList<>(); //(1)
+		List<MyDate> list = new ArrayList<>();  //(2)
+		
+		
 		//2. fillArrayList() 메서드를 호출하세요
 		fillArrayList(list);
 		//3. printArrayList() 메서드를 호출하세요

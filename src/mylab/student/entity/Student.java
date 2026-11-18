@@ -11,8 +11,8 @@ public class Student {
 
     // 생성자에서도 setter를 사용하여 학년을 검사한다.
     public Student(String studentId, String name, String major, int grade)
-            throws InvalidGradeException {
-        setStudentId(studentId);
+    		throws InvalidGradeException {
+    	setStudentId(studentId);
         setName(name);
         setMajor(major);
         setGrade(grade);
@@ -48,9 +48,7 @@ public class Student {
 
     public void setGrade(int grade) throws InvalidGradeException {
         if (grade < 1 || grade > 4) {
-            throw new InvalidGradeException(
-                "학년은 1~4 사이의 값이어야 합니다."
-            );
+            throw new InvalidGradeException("학년은 1~4 사이의 값이어야 합니다.");
         }
 
         this.grade = grade;
